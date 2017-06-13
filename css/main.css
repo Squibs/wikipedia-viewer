@@ -88,3 +88,9 @@ body {
 #searchBox button:focus:before {
 	border-right-color: #c42f2f;
 }
+
+a			{ text-decoration: none; }
+a:link, 
+a:visited 	{ color: #d83c3c; } 
+a:hover 	{ color: #e54040; }
+a:active 	{ color: #c42f2f; }
