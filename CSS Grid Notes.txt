@@ -1,0 +1,36 @@
+CSS Grid Notes:
+
+/* creates a 5 x 5 grid */
+container {
+	dispaly: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+grid-column-start:				<integer>, span <integer>				// can be negative numbers as well (starts from the right instead of left), when using span it can't
+grid-column-end:				<integer>, span <integer>				// can be negative numbers as well (starts from the right instead of left), when using span it can't
+grid-column:					shorthand for both column-start and column-end  (ex. grid-column: 4 / 6) or (grid-column: 2 / span 3)
+
+grid-row-start:					<integer>, span <integer>
+grid-row-end:					<integer>, span <integer>
+grid-row:						shorthand for row-start and row-end
+
+grid-area:						shorthand for grid-row-start, grid-column-start, grid-row-end, grid-column-end in that order (ex. grid-area: 1 / 2 / 4 / 6)
+
+- grid-areas can overlap
+- if items are explicity placed with any of the above commands, they will be in a default order of how they appear in the source code;
+	- this can be overridden with with order:
+
+order:							<integer>	// can be negative
+
+container properties:
+	display: grid;				//use the grid layout
+	grid-template-columns:		<length>, <percentage>, <flex>, max-content, min-content, minmax(min, max) // combine multiple types (ex. grid-template-columns: 100px 3em 40%)
+	grid-template-rows:			<length>, <percentage>, <flex>, max-content, min-content, minmax(min, max)
+
+- can use repeat (ex. grid-template-columns: repeat(8, 12.5%);)
+	
+- grid new unit fr (fractional) (ex. grid-template-columns: 1fr 5fr;) will make 2 columns one being 1/6 and the other 5/6
+	- another (ex. grid-template-columns: 50px 1fr 1fr 1fr 50px;) (ex. grid-template-columns: 75px 3fr 2fr;)
+
+grid-template:					shorthand for grid-template-rows and grid-template-columns (ex. grid-template: 1fr 50px / 20% 80%;)

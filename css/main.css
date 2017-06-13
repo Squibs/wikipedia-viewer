@@ -1,0 +1,83 @@
+html, body {
+	width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	grid-template: repeat(10, 10%) / 10% 80% 10%;
+}
+
+.container {
+	grid-column: 2;
+	grid-row: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#searchBox {
+	width: 100%;
+	max-width: 450px;
+}
+
+#searchBox input {
+	width: 85%;
+	height: 35px;
+	padding: 10px 5px;
+	border: 0;
+	background: #eee;
+	border-radius: 3px 0 0 3px;
+}
+
+#searchBox input:focus {
+	outline: 0;
+	background: #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+}
+
+#searchBox button {
+	overflow: visible;
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	height: 35px;
+	width: 15%;
+	color: #fff;
+	text-transform: uppercase;
+	background: #d83c3c;
+	border-radius: 0 3px 3px 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+#searchBox button:before {
+	position: absolute;
+	top: 10px;
+	left: -6px;
+	content: '';
+	border-width: 8px 8px 8px 0;
+	border-style: solid solid solid none;
+	border-color: transparent #d83c3c transparent;
+}
+
+#searchBox button:hover {
+	background: #e54040;
+}
+
+#searchBox button:active,
+#searchBox button:focus {
+	background: #c42f2f;
+}
+
+#searchBox button:hover:before {
+	border-right-color: #e54040;
+}
+
+#searchBox button:focus:before {
+	border-right-color: #c42f2f;
+}
