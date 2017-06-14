@@ -65,9 +65,6 @@ const getString = function () {
 const apiCall = function (string) {
   const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=${string}&srlimit=9&origin=*`;
 
-  console.log(string);
-  console.log(url);
-
   return new Promise((resolve, reject) => {
     const req = new XMLHttpRequest();
     req.open('GET', url);
@@ -128,9 +125,7 @@ const generateElements = function (apiData) {
     body.insertBefore(item, bodyBottom);
   }
 
-  console.log('length: ' + data.query.search.length);
   if (data.query.search.length === 0) {
-    console.log('fix it dummy');
     const item = document.createElement('div');
     const content = document.createElement('div');
     const heading = document.createElement('h1');
