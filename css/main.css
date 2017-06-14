@@ -34,7 +34,7 @@ body {
 
 #searchBox input {
 	width: 85%;
-	height: 35px;
+	height: 37px;
 	padding: 10px 5px;
 	border: 0;
 	background: #eee;
@@ -54,7 +54,7 @@ body {
 	border: 0;
 	padding: 0;
 	cursor: pointer;
-	height: 35px;
+	height: 37px;
 	width: 15%;
 	color: #fff;
 	text-transform: uppercase;
@@ -118,12 +118,20 @@ a:active 	{ color: #c42f2f; }
 	max-width: 100%;
 	margin: 0 auto;
 	height: 100%;
-	background-color: #eeeeee;
+	background-color: #eee;
 }
 
 .selector {
 	width: 10px;
 	height: 100%;
+}
+
+.item:hover .content {
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-right-style: dotted;
+	border-color: #d83c3c;
+	cursor: pointer;
 }
 
 .item:hover .selector {
@@ -133,4 +141,10 @@ a:active 	{ color: #c42f2f; }
 .content {
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 100%;
+	border: 2px solid #eee;
+}
+
+.searchmatch {
+	color: #d83c3c;
 }
