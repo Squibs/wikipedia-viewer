@@ -90,11 +90,11 @@ body {
 	border-right-color: #c42f2f;
 }
 
-a			{ text-decoration: none; }
-a:link, 
-a:visited 	{ color: #d83c3c; } 
-a:hover 	{ color: #e54040; }
-a:active 	{ color: #c42f2f; }
+#random a			{ text-decoration: none; }
+#random a:link, 
+#random a:visited 	{ color: #d83c3c; } 
+#random a:hover 	{ color: #e54040; }
+#random a:active 	{ color: #c42f2f; }
 
 /******************************************/
 
@@ -147,4 +147,10 @@ a:active 	{ color: #c42f2f; }
 
 .searchmatch {
 	color: #d83c3c;
+}
+
+.item a {
+	display: flex;
+	text-decoration: none;
+	color: black;
 }
