@@ -9,15 +9,22 @@ const changeLayout = function () {
       '@media screen and (max-width: 410px) { #pageTitle { display: none; }';
   */
 
+  const logo = document.getElementById('logo');
+  logo.style.maxWidth = 'calc(50px + 5vh)';
+
   const title = document.getElementById('pageTitle');
   title.style.display = 'none';
 
-  const logo = document.getElementById('logo');
-  logo.style.maxWidth = 'calc(50px + 5vh)';
-  logo.style.marginBottom = '15%';
+  const search = document.getElementById('searchBox');
+  search.style.marginBottom = '-25px';
 
   const random = document.getElementById('random');
   random.style.display = 'none';
+
+  const items = document.getElementsByClassName('item');
+  for (let i = 0; i < items.length; i += 1) {
+    items[i].style.display = 'flex';
+  }
 };
 
 document.getElementById('submit').onclick = function () {

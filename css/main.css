@@ -4,11 +4,13 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background-color: #fbfbfb;
+	overflow-x: hidden;
 }
 
 body {
 	display: grid;
-	grid-template: repeat(10, 10%) / 10% 80% 10%;
+	grid-template: repeat(10, 10%) 5px / 6.5% 87% 6.5%;
+	grid-row-gap: 1vh;
 }
 
 .container {
@@ -93,3 +95,42 @@ a:link,
 a:visited 	{ color: #d83c3c; } 
 a:hover 	{ color: #e54040; }
 a:active 	{ color: #c42f2f; }
+
+/******************************************/
+
+#spacerLeft {
+	width: 100%;
+	height: 100%;
+	grid-column: 1;
+	grid-row: span 10;
+}
+
+#spacerRight {
+	width: 100%;
+	height: 100%;
+	grid-column: 3;
+	grid-row: span 10;
+}
+
+.item {
+	display: none;
+	width: calc(50% + 280px);
+	max-width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #eeeeee;
+}
+
+.selector {
+	width: 10px;
+	height: 100%;
+}
+
+.item:hover .selector {
+	background-color: #d83c3c;
+} 
+
+.content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
