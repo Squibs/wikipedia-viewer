@@ -110,7 +110,7 @@ const generateElements = function (apiData) {
 
     // add snippet to paragraph element
     add = document.createTextNode(data.query.search[i].snippet);
-    paragraph.innerHTML = add.textContent;
+    paragraph.innerHTML = `${add.textContent}...`;
 
     // add children to correct parents
     content.appendChild(heading);
