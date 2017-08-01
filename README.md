@@ -1,7 +1,7 @@
 # Wikipedia Viewer
 A Wikipedia viewer I have created while going through the intermediate front end development project challenges at https://freeCodeCamp.com
 
-## [Wikipedia Viewer](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#wikipedia-viewer) (Go Back)
+## [Front End Development Projects](https://github.com/Squibs/freeCodeCamp/tree/master/Front%20End%20Development%20Certification#wikipedia-viewer) (Go Back)
 
 <a href="https://squibs.github.io/wikipedia-viewer/" target="_blank"><img src="img/screenshot-wikipedia-viewer.png" height="600" alt="Screenshot of my Wikipedia viewer project / website"/></a>
 
